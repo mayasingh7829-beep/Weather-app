@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Weather app</title>
+
+
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <div class="container">
+    <header>
+      <div class="logo">
+        <div class="icon"><img src="assets/images/logo.svg" alt="" srcset=""></div>
+        <!-- <span>Weather Now</span> -->
+      </div>
+      <button class="unit-btn">Units</button>
+    </header>
+  <!-- How's the sky looking today? -->
+   <h1>How's the sky looking today?</h1>
+
+   <!-- Search for a city, e.g., New York -->
+
+  <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search for a place..." class="search-input" />
+      <button id="searchBtn">Search</button>
+      <div id="suggestions" class="suggestions-box"></div>
+    </div>
+  
+
+     <div class="grid">
+      <div>
+        
+        <div class="weather-card main-weather">
+          <div class="weather-info">
+            <h2 id="city">Berlin, Germany</h2>
+            <p id="date">Tuesday, Aug 5, 2025</p>
+          </div>
+          <div class="right">
+            <div class="sun-icon"></div>
+            <div id="temperature"></div>
+          </div>
+        </div>
+        
+  
+  <!-- Insert temperature here -->
+    <div class="stats">
+          <div class="stat-box">
+            <h3>Feels Like</h3>
+            <p id="feels-like">64°</p>
+          </div>
+          <div class="stat-box">
+            <h3>Humidity</h3>
+            <p id="humi">46%</p>
+          </div>
+          <div class="stat-box">
+            <h3>Wind</h3>
+            <p id="wind">9 mph</p>
+          </div>
+          <div class="stat-box">
+            <h3>Precipitation</h3>
+            <p id="precp">0 in</p>
+          </div>
+        </div>
+
+
+  <!-- Insert daily forecast for the next 7 days here -->
+    <div class="daily">
+          <h3>Daily forecast</h3>
+          <div class="daily-cards">
+            <div class="day">
+              <p class="day-name">Mon</p>
+              <div class="weather-icon">☁️ 
+              </div>
+              <p class="temp-range">68° / 57°</p>
+            </div>
+            <div class="day">
+              <p class="day-name">Tue</p>
+              <div class="weather-icon"></div>
+              <p class="temp-range">70° / 59°</p>
+            </div>
+            <div class="day">
+              <p class="day-name">Wed</p>
+              <div class="weather-icon"></div>
+              <p class="temp-range">75° / 57°</p>
+            </div>
+            <div class="day">
+              <p class="day-name">Thu</p>
+              <div class="weather-icon"></div>
+              <p class="temp-range">77° / 55°</p>
+            </div>
+            <div class="day">
+              <p class="day-name">Fri</p>
+              <div class="weather-icon"></div>
+              <p class="temp-range">70° / 59°</p>
+            </div>
+            <div class="day">
+              <p class="day-name">Sat</p>
+              <div class="weather-icon"></div>
+              <p class="temp-range">77° / 61°</p>
+            </div>
+            <div class="day">
+              <p class="day-name">Sun</p>
+              <div class="weather-icon"></div>
+              <p class="temp-range">75° / 59°</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  
+  <!-- Insert hourly forecast for the selected day here -->
+   <div class="hourly">
+        <div class="hourly-header">
+          <h3>Hourly forecast</h3>
+          <select id="day-select" class="slc" style="background: black;">
+            <option>Monday</option>
+            <option class="selectOpt">Tuesday</option>
+            <option class="selectOpt">Wednesday</option>
+            <option class="selectOpt">Thursday</option>
+            <option class="selectOpt">Friday</option>
+            <option class="selectOpt">Saturday</option>
+            <option class="selectOpt">Sunday</option>
+          </select>
+        </div>
+
+        <div class="hourly-item">
+          <div class="time">☁️ 3 PM</div>
+          <div class="temp">68°</div>
+        </div>
+        <div class="hourly-item">
+          <div class="time">🌤 4 PM</div>
+          <div class="temp">68°</div>
+        </div>
+        <div class="hourly-item">
+          <div class="time">☀️ 5 PM</div>
+          <div class="temp">68°</div>
+        </div>
+        <div class="hourly-item">
+          <div class="time">🌧 6 PM</div>
+          <div class="temp">66°</div>
+        </div>
+        <div class="hourly-item">
+          <div class="time">🌧 7 PM</div>
+          <div class="temp">66°</div>
+        </div>
+        <div class="hourly-item">
+          <div class="time">🌫 8 PM</div>
+          <div class="temp">64°</div>
+        </div>
+        <div class="hourly-item">
+          <div class="time">☁️ 9 PM</div>
+          <div class="temp">63°</div>
+        </div>
+        <div class="hourly-item">
+          <div class="time">☁️ 10 PM</div>
+          <div class="temp">63°</div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Manya</a>.
+  </div>
+</body>
+
+
+
+<script src="script.js"></script>
+</html>
